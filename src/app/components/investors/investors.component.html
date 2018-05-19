@@ -1,19 +1,21 @@
-<mat-form-field class="search-form">
-  <input matInput placeholder="Search Picture" type="text">
-</mat-form-field>
-<button button="submit" mat-raised-button color="primary">Search</button>
-<br>
-<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
-  <div fxFlex="20%" *ngFor="let opportunity of opportunities">    
-    <mat-card>
-      <mat-card-title>{{opportunity?.company}}</mat-card-title>
-      <mat-card-subtitle>{{opportunity?.company}}</mat-card-subtitle>
-      <mat-card-content>
-        <ul>
-          <li>{{opportunity?.total}}</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
-  </div>
+<div>  
+  <mat-form-field class="search-form">
+    <input matInput placeholder="Search Picture" type="text">
+  </mat-form-field>
+  <button button="submit" mat-raised-button color="primary">Search</button>
+  <br>
+  <div class="ng-tns-c30-89" fxlayout="column" fxlayout.gt-sm="row" 
+  style="flex-direction: row; box-sizing: border-box; display: flex;">
+    <div *ngFor="let opportunity of opportunities | orderBy: 'totalRaised'">    
+      <mat-card  class="text-center pad-top-xl push-top-xxl mat-card" fxflex="1 0 auto" fxflex.gt-sm="33" style="flex: 1 1 100%; box-sizing: border-box; max-width: 33%;">
+        <mat-card-title>{{opportunity?.company}}</mat-card-title>
+        <mat-card-subtitle>{{opportunity?.company}}</mat-card-subtitle>
+        <mat-card-content>
+          <ul>
+            <li>{{opportunity?.total}}</li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>  
 </div>
-

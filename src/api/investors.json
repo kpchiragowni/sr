@@ -17,18 +17,18 @@
       "seis": true
     },
     {
-      "company": "ACME Corp",
+      "company": "ACME Corp 2",
       "tradingActive": false,
       "averageInvestment": 4029,
-      "totalRaised": 2441337,
+      "totalRaised": 35000,
       "eis": true,
       "seis": true
     },
     {
-      "company": "ACME Corp",
+      "company": "ACME Corp 33",
       "tradingActive": false,
       "averageInvestment": 4029,
-      "totalRaised": 2441337,
+      "totalRaised": 30000,
       "eis": true,
       "seis": true
     },

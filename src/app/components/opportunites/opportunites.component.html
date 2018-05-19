@@ -1,0 +1,29 @@
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell--span-6">
+        <mat-form-field class="search-form">
+          <input matInput placeholder="Search company" type="text">
+        </mat-form-field>
+        <button button="submit" mat-raised-button color="primary">Search</button>
+      </div>
+      <div class="mdc-layout-grid__cell--span-6">
+          ...
+      </div>
+  </div>
+</div>
+
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell--span-3" *ngFor="let opportunity of opportunities | orderBy: 'totalRaised'">
+        <mat-card>
+          <mat-card-title>{{opportunity?.company}}</mat-card-title>
+          <mat-card-subtitle>{{opportunity?.company}}</mat-card-subtitle>
+          <mat-card-content>
+            <ul>
+              <li>{{opportunity?.total}}</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+  </div>
+</div>
