@@ -14,7 +14,7 @@ export class OpportunitesComponent implements OnInit {
   public filteredOpportunities: IOpportunity[];
   public filterKey: string;
   public sortBy: string;
-  public tradingActive: false;
+  public tradingActive: boolean;
   public eis: false;
   public seis: false;
   public color = 'accent';
@@ -52,6 +52,24 @@ export class OpportunitesComponent implements OnInit {
     if (this.opportunities && this.opportunities.length) {
       if (this.tradingActive) {
         this.filteredOpportunities = this.opportunities.filter(opp => opp.tradingActive === this.tradingActive);
+      } else {
+        this.filteredOpportunities = this.opportunities;
+      }
+    }
+  }
+
+  private onChange(key) {
+    if (key === 'eis') {
+      if (this.eis) {
+        this.filteredOpportunities = this.opportunities.filter(opp => opp.eis === this.eis);
+      } else {
+        this.filteredOpportunities = this.opportunities;
+      }
+    }
+
+    if (key === 'seis') {
+      if (this.seis) {
+        this.filteredOpportunities = this.opportunities.filter(opp => opp.seis === this.seis);
       } else {
         this.filteredOpportunities = this.opportunities;
       }
