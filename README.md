@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
-![alt text](assets/FrontendChallenge.png "App screenshot")
+![alt text](src/assets/FrontendChallenge.png "App screenshot")
 
 ## Development server
 
