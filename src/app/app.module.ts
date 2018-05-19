@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import {
   MatCardModule,
@@ -10,7 +10,11 @@ import {
   MatButtonModule,
   MatFormFieldModule,
   MatInputModule,
-  MatMenuModule } from '@angular/material';
+  MatSelectModule,
+  MatCheckboxModule,
+  MatMenuModule,
+  MatTooltipModule,
+  MatSlideToggleModule } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -22,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
 import { OpportunitesComponent } from './components/opportunites/opportunites.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +37,7 @@ import { OpportunitesComponent } from './components/opportunites/opportunites.co
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     HttpClientModule,
     FlexLayoutModule,
     NgPipesModule,
@@ -41,7 +47,11 @@ import { OpportunitesComponent } from './components/opportunites/opportunites.co
     MatMenuModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatTooltipModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

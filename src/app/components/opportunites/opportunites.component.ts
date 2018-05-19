@@ -11,7 +11,24 @@ import { IOpportunity, IOpportunities } from '../../model/opportunity';
 export class OpportunitesComponent implements OnInit {
 
   public opportunities: IOpportunity[];
+  public filteredOpportunities: IOpportunity[];
+  public filterKey: string;
+  public sortBy: string;
+  public tradingActive: false;
+  public eis: false;
+  public seis: false;
+  public color = 'accent';
 
+  public columns = [
+    {
+      'value': 'averageInvestment',
+      'viewValue': 'Average Investment'
+    },
+    {
+      'value': 'totalRaised',
+      'viewValue': 'Total Raised'
+    }
+  ];
   constructor(private investorsSerivce: InvestorsService) { }
 
   ngOnInit() {
@@ -19,9 +36,25 @@ export class OpportunitesComponent implements OnInit {
     .subscribe(
       (opportunities) => {
         this.opportunities = opportunities.opportunities;
+        this.filteredOpportunities = this.opportunities;
         console.log(this.opportunities);
       }
     );
   }
 
+  public onChanged(event) {
+    this.tradingActive = !this.tradingActive;
+    this.applyFilter();
+    console.log('Trading active::: ', this.tradingActive);
+  }
+
+  private applyFilter() {
+    if (this.opportunities && this.opportunities.length) {
+      if (this.tradingActive) {
+        this.filteredOpportunities = this.opportunities.filter(opp => opp.tradingActive === this.tradingActive);
+      } else {
+        this.filteredOpportunities = this.opportunities;
+      }
+    }
+  }
 }

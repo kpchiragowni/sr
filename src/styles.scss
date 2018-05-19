@@ -1,3 +1,14 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 @import "~@material/layout-grid/mdc-layout-grid";
+
+
+.active-status {
+   float: right;
+   &.active {
+       color: green;
+   } 
+   &.not-active {
+       color: red;
+   }
+}

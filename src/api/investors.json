@@ -9,7 +9,7 @@
       "seis": false
     },
     {
-      "company": "ACME Corp",
+      "company": "ABC Company",
       "tradingActive": false,
       "averageInvestment": 4029,
       "totalRaised": 2441337,
@@ -17,7 +17,7 @@
       "seis": true
     },
     {
-      "company": "ACME Corp 2",
+      "company": "ACME Corp 23",
       "tradingActive": false,
       "averageInvestment": 4029,
       "totalRaised": 35000,
@@ -26,19 +26,59 @@
     },
     {
       "company": "ACME Corp 33",
-      "tradingActive": false,
+      "tradingActive": true,
       "averageInvestment": 4029,
       "totalRaised": 30000,
       "eis": true,
       "seis": true
     },
     {
+      "company": "ACME Corp ltd",
+      "tradingActive": false,
+      "averageInvestment": 4029,
+      "totalRaised": 2441337,
+      "eis": true,
+      "seis": true
+    },
+    {
+      "company": "ACMEX Corp",
+      "tradingActive": true,
+      "averageInvestment": 4029,
+      "totalRaised": 2441337,
+      "eis": true,
+      "seis": true
+    },
+    {
+      "company": "ACME Corporation",
+      "tradingActive": true,
+      "averageInvestment": 4029,
+      "totalRaised": 24441337,
+      "eis": true,
+      "seis": false
+    },
+    {
+      "company": "ACME Corp 10",
+      "tradingActive": true,
+      "averageInvestment": 4029,
+      "totalRaised": 2441337,
+      "eis": false,
+      "seis": true
+    },
+    {
       "company": "ACME Corp",
       "tradingActive": false,
       "averageInvestment": 4029,
       "totalRaised": 2441337,
       "eis": true,
       "seis": true
+    },
+    {
+      "company": "ACME Corp",
+      "tradingActive": false,
+      "averageInvestment": 4029,
+      "totalRaised": 2441337,
+      "eis": true,
+      "seis": false
     },
     {
       "company": "ACME Corp",
@@ -61,8 +101,16 @@
       "tradingActive": false,
       "averageInvestment": 4029,
       "totalRaised": 2441337,
-      "eis": true,
+      "eis": false,
       "seis": true
+    },
+    {
+      "company": "ACME Corp",
+      "tradingActive": false,
+      "averageInvestment": 4029,
+      "totalRaised": 2441337,
+      "eis": false,
+      "seis": false
     },
     {
       "company": "ACME Corp",
@@ -78,6 +126,22 @@
       "averageInvestment": 4029,
       "totalRaised": 2441337,
       "eis": true,
+      "seis": false
+    },
+    {
+      "company": "ACME Corp",
+      "tradingActive": false,
+      "averageInvestment": 4029,
+      "totalRaised": 2441337,
+      "eis": true,
+      "seis": false
+    },
+    {
+      "company": "ACME Corp",
+      "tradingActive": false,
+      "averageInvestment": 4029,
+      "totalRaised": 2441337,
+      "eis": false,
       "seis": true
     },
     {
@@ -86,7 +150,7 @@
       "averageInvestment": 4029,
       "totalRaised": 2441337,
       "eis": true,
-      "seis": true
+      "seis": false
     },
     {
       "company": "ACME Corp",
@@ -94,71 +158,7 @@
       "averageInvestment": 4029,
       "totalRaised": 2441337,
       "eis": true,
-      "seis": true
-    },
-    {
-      "company": "ACME Corp",
-      "tradingActive": false,
-      "averageInvestment": 4029,
-      "totalRaised": 2441337,
-      "eis": true,
-      "seis": true
-    },
-    {
-      "company": "ACME Corp",
-      "tradingActive": false,
-      "averageInvestment": 4029,
-      "totalRaised": 2441337,
-      "eis": true,
-      "seis": true
-    },
-    {
-      "company": "ACME Corp",
-      "tradingActive": false,
-      "averageInvestment": 4029,
-      "totalRaised": 2441337,
-      "eis": true,
-      "seis": true
-    },
-    {
-      "company": "ACME Corp",
-      "tradingActive": false,
-      "averageInvestment": 4029,
-      "totalRaised": 2441337,
-      "eis": true,
-      "seis": true
-    },
-    {
-      "company": "ACME Corp",
-      "tradingActive": false,
-      "averageInvestment": 4029,
-      "totalRaised": 2441337,
-      "eis": true,
-      "seis": true
-    },
-    {
-      "company": "ACME Corp",
-      "tradingActive": false,
-      "averageInvestment": 4029,
-      "totalRaised": 2441337,
-      "eis": true,
-      "seis": true
-    },
-    {
-      "company": "ACME Corp",
-      "tradingActive": false,
-      "averageInvestment": 4029,
-      "totalRaised": 2441337,
-      "eis": true,
-      "seis": true
-    },
-    {
-      "company": "ACME Corp",
-      "tradingActive": false,
-      "averageInvestment": 4029,
-      "totalRaised": 2441337,
-      "eis": true,
-      "seis": true
+      "seis": false
     },
     {
       "company": "ACME Corp",
