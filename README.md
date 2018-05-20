@@ -1,5 +1,4 @@
 # Front-end Challenge
-***
 
 This project is a front-end challenge and requires:
 
@@ -10,38 +9,41 @@ This project is a front-end challenge and requires:
 ![alt text](src/assets/FrontendChallenge.png "App screenshot")
 
 ## Docker
-***
 
 Create the Docker image and run it locally
 
-`docker build --rm -f Dockerfile -t sr-app1:latest .`
+    docker build --rm -f Dockerfile -t sr-app1:latest .
 
-`docker run -it -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 4200:4200 --rm sr-app1`
+    docker run -it -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 4200:4200 --rm sr-app1
 
 ## Requirements
-***
+
 1. Install Node (v8.11.2)
+
+    https://nodejs.org/en/
 
 2. Install the Angular CLI
 
-`npm install -g @angular/cli`
+    `npm install -g @angular/cli`
 
 ## Getting Started
+
 1. Clone this repository
 
-`git clone https://github.com/kpchiragowni/sr.git`
-`cd sr`
+    git clone https://github.com/kpchiragowni/sr.git
+
+    cd sr
 
 2. Install the npm packages
 
-npm i
+    npm i
 
 ## Development server
-***
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
+
 ***
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
